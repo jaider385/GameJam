@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using Unity.VectorGraphics;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+    }
+    public void Jugar()
+    {
+        SceneManager.LoadScene(1);
     }
     public void AumentoDificultad()
     {
@@ -26,6 +30,6 @@ public class GameManager : MonoBehaviour
     public void Perdio()
     {
         Debug.Log("se reinicia Escena");
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

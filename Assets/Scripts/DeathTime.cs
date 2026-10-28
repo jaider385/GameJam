@@ -4,6 +4,6 @@ public class DeathTime : MonoBehaviour
 {
     void Start()
     {
-        Destroy(this.gameObject, 8f);
+        Destroy(this.gameObject, 10f);
     }
 }
