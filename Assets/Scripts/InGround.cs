@@ -6,7 +6,7 @@ public class InGround : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Suelo"))
+        if (other.gameObject.CompareTag("Suelo") || other.gameObject.CompareTag("Ground"))
         {
             player.tocandoSuelo = true;
         }

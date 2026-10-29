@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,7 +11,7 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
     }
-    public void Jugar()
+    public void Instrucciones()
     {
         SceneManager.LoadScene(1);
     }
@@ -30,6 +29,6 @@ public class GameManager : MonoBehaviour
     public void Perdio()
     {
         Debug.Log("se reinicia Escena");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 351078440877929338}
   - component: {fileID: 8319859064535734255}
   - component: {fileID: 7235362472958364737}
+  - component: {fileID: 463957110115440623}
+  - component: {fileID: 8208850235485947883}
   m_Layer: 0
   m_Name: Ladrillo 1
-  m_TagString: Untagged
+  m_TagString: Ladrillo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,3 +142,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &463957110115440623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3398847336675758226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1878ca3e490c2b945a76f3415b9533ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathTime
+--- !u!114 &8208850235485947883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3398847336675758226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07aa29a6a40d12b4fbabdd2ccb6797e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ladrilloComportamiento

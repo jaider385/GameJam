@@ -4,7 +4,7 @@ using UnityEngine.Video;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField]private int vidas = 3;
+    [SerializeField] private int vidas = 3;
 
     [SerializeField] InputActionAsset map;
     [SerializeField] float fuerzaSalto;
@@ -48,6 +48,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Ladrillo"))
         {
             RestarVida();
+            Destroy(collision.gameObject);
         }
         if (collision.gameObject.CompareTag(""))
         {
